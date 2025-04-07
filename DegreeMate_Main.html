@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>DegreeMate - Education Pathway Adviser</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Chatbot Integration -->
+  <link rel="stylesheet" href="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/themes/df-messenger-default.css">
+  <script src="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/df-messenger.js"></script>
+  <style>
+    body {
+      background: linear-gradient(to right, #e3f2fd, #ffffff);
+      font-family: 'Segoe UI', sans-serif;
+    }
+    .hero {
+      padding: 4rem 1rem;
+      background: #0d6efd;
+      color: white;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      font-weight: 700;
+    }
+    .section {
+      padding: 3rem 1rem;
+    }
+    df-messenger {
+      position: fixed;
+      bottom: 0;
+      right: 20px;
+      z-index: 1000;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="hero">
+    <h1>DegreeMate</h1>
+    <p class="lead">Your Personal Education Pathway Adviser for SMU</p>
+  </div>
+
+  <div class="container section">
+    <h2>About DegreeMate</h2>
+    <p>
+      DegreeMate is an AI-powered conversational agent designed to support post-Junior College (JC) students in Singapore who are considering university education at Singapore Management University (SMU). Many students are uncertain about what degree to pursue. DegreeMate helps by leveraging their interests and suggesting suitable SMU degree programs.
+    </p>
+    <p>
+      Students often come from a general academic structure focusing on subjects like Mathematics, Sciences, Humanities, and General Paper. Due to limited career-specific exposure and commercial experience, they may feel overwhelmed by the number of university options.
+    </p>
+    <p>
+      DegreeMate provides personalized, accessible guidance to help students explore their post-JC academic options with clarity and confidence.
+    </p>
+  </div>
+
+  <div class="container section bg-light rounded shadow-sm">
+    <h2>How It Works</h2>
+    <ul>
+      <li>Chat with DegreeMate about your interests and subjects you're strong in.</li>
+      <li>Receive curated degree suggestions offered at SMU based on your input.</li>
+      <li>Explore various educational pathways with contextual support.</li>
+    </ul>
+  </div>
+
+  <div class="container section">
+    <h2>Start Chatting with DegreeMate</h2>
+    <p>Use the chatbot in the bottom right corner of the screen to start your journey today.</p>
+  </div>
+
+  <!-- Dialogflow Chatbot -->
+  <df-messenger
+    location="us-central1"
+    project-id="fourth-compound-452004-f6"
+    agent-id="453dc26a-d559-48f2-9bef-d083e70446f8"
+    language-code="en"
+    max-query-length="-1">
+    <df-messenger-chat chat-title="DegreeMate"></df-messenger-chat>
+  </df-messenger>
+
+  <!-- Bootstrap JS (for potential interactive elements in future) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
